@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My LP List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="turntable">
+      <div class="platter"></div>
+      <img src="rec1.png" class="rec" />
+      <div class="record">
+        <div class="label">
+          <div class="nub"></div>
+          <div class="marker"></div>
+        </div>
+      </div>
+      <div class="shiner"></div>
+      <div class="tonearm-base"></div>
+      <div class="tonearm" style="z-index: 2">
+        <div class="tonearm-arm">
+          <div class="stylus"></div>
+        </div>
+      </div>
+      <div class="startstop" onclick="playLp()"></div>
+      <div class="buttons">
+        <button class="nextLp" onclick="nextLp(0)">◀</button>
+        <button class="nextLp" onclick="nextLp(1)">▶</button>
+      </div>
+      <div class="adapter"></div>
+      <div class="toggler"></div>
+      <div class="bpm"><div class="knob"></div></div>
+      <div class="onoff"></div>
+      <div class="speed1"></div>
+      <div class="speed2"></div>
+      <div class="topdot"></div>
+      <div class="console">LET ME GIVE YOU MY TASTE</div>
+    </div>
+    <audio
+      class="audioPlay"
+      src="/audio/aud1.mp3"
+      type="audio/mp3"
+      onloadstart="this.volume=0.1"
+      loop
+    />
+    <script src="script.js"></script>
+  </body>
+</html>

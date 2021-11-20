@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+body a {
+  color: pink;
+}
+
+body p {
+  font-size: 14px;
+}
+
+.turntable {
+  background: #ccc;
+  background: linear-gradient(
+    180deg,
+    #cccccc 12.1202882483%,
+    #cbcbcb 12.1202882483%,
+    #828282 88.949556541%
+  );
+  display: inline-block;
+  width: 390px;
+  height: 350px;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  border-radius: 8px;
+}
