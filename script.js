@@ -13,7 +13,7 @@ function nextLp(index) {
   const image = document.querySelector('.rec');
   const audio = document.querySelector('.audioPlay');
   // let rec = document.querySelector(".rec").getAttribute('src');
-  let title = document.querySelector('.console');
+  let title = document.querySelector('.title');
 
   if (index) {
     if (num == 5) return;
@@ -34,7 +34,7 @@ function nextLp(index) {
   if (image.getAttribute('src') === 'rec1.png') {
     title.innerText = '연극이 끝난 후';
   } else if (image.getAttribute('src') === 'rec2.png') {
-    title.innerText = 'Seoul city pop';
+    title.innerText = 'Drive';
   } else if (image.getAttribute('src') === 'rec3.png') {
     title.innerText = '네온';
   } else if (image.getAttribute('src') === 'rec4.png') {
@@ -47,7 +47,7 @@ function nextLp(index) {
 function playLp() {
   const audio = document.querySelector('.audioPlay');
   let rec = document.querySelector('.rec').getAttribute('src');
-  let title = document.querySelector('.console');
+  let title = document.querySelector('.title');
 
   if (audio.paused) {
     audio.play();
