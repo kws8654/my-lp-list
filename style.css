@@ -3,7 +3,7 @@
 }
 
 *::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+  display: none;
 }
 
 html,
@@ -14,10 +14,6 @@ body {
   font-family: sans-serif;
   width: 100%;
   height: 100%;
-}
-
-body a {
-  color: pink;
 }
 
 body p {
@@ -38,7 +34,7 @@ body p {
   margin: auto;
   padding: 0;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -54,9 +50,11 @@ body p {
   transform: rotate(35deg);
   transition: all 0.5s ease;
 }
+
 .turntable.active .tonearm .tonearm-base {
   z-index: -2;
 }
+
 .turntable .tonearm-base {
   width: 110px;
   height: 110px;
@@ -73,6 +71,7 @@ body p {
     inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 0 4px rgba(0, 0, 0, 0.5),
     0 -1px 0px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.8);
 }
+
 .turntable .tonearm-base:after {
   content: '';
   width: 50px;
@@ -88,6 +87,7 @@ body p {
   box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.4),
     inset 0 2px 2px rgba(255, 255, 255, 0.4);
 }
+
 .turntable .tonearm-base:before {
   content: '';
   width: 100px;
@@ -101,6 +101,7 @@ body p {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2),
     0 -1px 0 rgba(255, 255, 255, 0.1);
 }
+
 .turntable .tonearm {
   position: absolute;
   right: 75px;
@@ -126,18 +127,17 @@ body p {
   top: 0;
   right: 0;
   z-index: 100;
-
   transition: all 0.5s ease;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
+
 .turntable .tonearm .tonearm-arm:after {
   position: relative;
   display: block;
   content: '';
   width: 18px;
   height: 40px;
-
   background: #fff;
   top: -20px;
   left: -4px;
@@ -146,6 +146,7 @@ body p {
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
+
 .turntable .tonearm .tonearm-arm .stylus {
   width: 20px;
   height: 35px;
@@ -158,6 +159,7 @@ body p {
   border-bottom-right-radius: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .turntable .tonearm .tonearm-arm .stylus:after {
   border-top: 2px solid #222;
   width: 30px;
@@ -166,6 +168,7 @@ body p {
   height: 1px;
   background: #666;
 }
+
 .turntable .tonearm .tonearm-arm .stylus:before {
   width: 6px;
   display: block;
@@ -175,11 +178,11 @@ body p {
   position: absolute;
   left: 7px;
   top: 20px;
-
   border-radius: 50%;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.2);
 }
+
 .turntable .platter {
   height: 270px;
   width: 270px;
@@ -216,6 +219,7 @@ body p {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease;
 }
+
 .turntable .record:before {
   position: absolute;
   width: 230px;
@@ -227,6 +231,7 @@ body p {
   background: #111;
   display: block;
 }
+
 .turntable .record .label {
   background: #fff;
   width: 60px;
@@ -239,6 +244,7 @@ body p {
   margin: 0;
   padding: 0;
 }
+
 .turntable .record .label:after {
   border-top-left-radius: 44px;
   border-top-right-radius: 44px;
@@ -251,6 +257,7 @@ body p {
   margin-top: 6px;
   border-bottom: none;
 }
+
 .turntable .record .label .nub {
   height: 12px;
   width: 12px;
@@ -262,6 +269,7 @@ body p {
   margin-top: -6px;
   position: absolute;
 }
+
 .turntable .record .label .marker {
   background: #ccc;
   width: 15px;
@@ -271,6 +279,7 @@ body p {
   top: 50%;
   margin-top: -5px;
 }
+
 .turntable .startstop {
   background: #999;
   background: linear-gradient(
@@ -287,6 +296,7 @@ body p {
     inset 0 1px 0px rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #555;
 }
+
 .turntable .startstop:after {
   content: 'START';
   font-size: 8px;
@@ -295,9 +305,11 @@ body p {
   line-height: 30px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
+
 .turntable .startstop.active:after {
   content: 'STOP';
 }
+
 .turntable .speed1 {
   width: 20px;
   height: 10px;
@@ -310,6 +322,7 @@ body p {
     inset 0 1px 0px rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #555;
 }
+
 .turntable .speed1:after {
   position: relative;
   background: green;
@@ -320,6 +333,7 @@ body p {
   top: 2px;
   content: '';
 }
+
 .turntable .speed2 {
   width: 20px;
   height: 10px;
@@ -332,6 +346,7 @@ body p {
     inset 0 1px 0px rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #555;
 }
+
 .turntable .speed2:after {
   position: relative;
   background: #666;
@@ -342,6 +357,7 @@ body p {
   top: 2px;
   content: '';
 }
+
 .turntable .adapter {
   position: absolute;
   width: 40px;
@@ -363,6 +379,7 @@ body p {
     inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 0 4px rgba(0, 0, 0, 0.5),
     0 -2px 0px rgba(0, 0, 0, 0.3), 0 2px 0px rgba(255, 255, 255, 0.8);
 }
+
 .turntable .adapter:after {
   content: '';
   width: 12px;
@@ -374,6 +391,7 @@ body p {
   box-shadow: inset 0 2px 0px rgba(0, 0, 0, 0.35),
     inset 0 -2px 0px rgba(255, 255, 255, 0.4);
 }
+
 .turntable .toggler {
   position: absolute;
   height: 18px;
@@ -384,6 +402,7 @@ body p {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3),
     inset 0 1px 0 rgba(0, 0, 0, 0.3);
 }
+
 .turntable .toggler:before {
   height: 12px;
   width: 12px;
@@ -396,6 +415,7 @@ body p {
   top: 3px;
   box-shadow: 1px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
+
 .turntable .toggler:after {
   height: 12px;
   width: 12px;
@@ -408,6 +428,7 @@ body p {
   top: 3px;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.3);
 }
+
 .turntable .onoff {
   position: absolute;
   background: #111;
@@ -418,6 +439,7 @@ body p {
   border-radius: 50%;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 }
+
 .turntable .onoff:after {
   border-top-left-radius: 44px;
   border-top-right-radius: 44px;
@@ -441,6 +463,7 @@ body p {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2),
     inset 0 -1px rgba(255, 255, 255, 0.4);
 }
+
 .turntable .bpm:after {
   content: '';
   height: 100%;
@@ -451,6 +474,7 @@ body p {
   bottom: 1px;
   display: block;
 }
+
 .turntable .bpm:before {
   content: '';
   height: 87%;
@@ -469,6 +493,7 @@ body p {
     transparent 5px
   );
 }
+
 .turntable .bpm .knob {
   position: relative;
   height: 14px;
@@ -481,6 +506,7 @@ body p {
   background: linear-gradient(180deg, #f2f2f2, 20%, #969696 80%);
   box-shadow: 1px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
+
 .turntable .bpm .knob:after {
   position: absolute;
   left: 0px;
@@ -489,6 +515,7 @@ body p {
   border-top: 2px solid #888;
   content: '';
 }
+
 .turntable .bpm .knob:before {
   content: '';
   position: relative;
@@ -510,21 +537,6 @@ body p {
   border-radius: 8px;
 }
 
-.console .title {
-  animation: flow 6s linear infinite;
-}
-
-@keyframes flow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .rec {
   position: absolute;
   top: 3%;

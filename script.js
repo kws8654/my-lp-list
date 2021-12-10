@@ -32,15 +32,15 @@ function nextLp(index) {
     audio.play();
   }
   if (image.getAttribute('src') === 'rec1.png') {
-    title.innerText = '연극이 끝난 후';
+    title.innerText = '연극이 끝난 후_샤프';
   } else if (image.getAttribute('src') === 'rec2.png') {
-    title.innerText = 'Drive';
+    title.innerText = 'Drive_김현철';
   } else if (image.getAttribute('src') === 'rec3.png') {
-    title.innerText = '네온';
+    title.innerText = '네온_유키카';
   } else if (image.getAttribute('src') === 'rec4.png') {
-    title.innerText = '운전만 해';
+    title.innerText = '운전만 해_Brave Girls';
   } else if (image.getAttribute('src') === 'rec5.png') {
-    title.innerText = 'Summer man';
+    title.innerText = 'Summer man_윤종신';
   }
 }
 
@@ -56,6 +56,6 @@ function playLp() {
     audio.currentTime = 0;
   }
   if (rec === './rec1.png') {
-    title.innerText = '연극이 끝난 후';
+    title.innerText = '연극이 끝난 후_샤프';
   }
 }
