@@ -1,9 +1,5 @@
 # Turn My LP
 
-<img width="100%" src="https://user-images.githubusercontent.com/91405218/146682287-b6bdc4be-00a0-437d-bb2e-35f93d8e6bdc.gif"/>
-
-### [LIVE LINK](https://kws8654.github.io/my-lp-list/)
-
 ## 1. Title
 
     - Turn My LP
@@ -30,7 +26,7 @@
   npm install npm@latest -g
   ```
   
-* Clone the repo
+* Clone the repository
    ```sh
    git clone https://github.com/kws8654/my-lp-list.git
    ```
@@ -40,7 +36,10 @@
    ```
    
 ## 4. Usage Example
-* 사용
+
+<img width="50%" src="https://user-images.githubusercontent.com/91405218/146682287-b6bdc4be-00a0-437d-bb2e-35f93d8e6bdc.gif"/>
+
+### [LIVE LINK](https://kws8654.github.io/my-lp-list/)
    
 ## 5. Contact
 
